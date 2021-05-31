@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lamp_setting_fragment_label" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="时间日期"
+            android:textColor="#4d4d4d"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/mc100_search_list_backbround"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mc100_search_list_title"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="编号" />
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Y/N" />
+
+                <TextView
+                    android:id="@+id/edit1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="名称" />
+
+                <TextView
+                    android:id="@+id/edit2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="地址" />
+
+                <TextView
+                    android:id="@+id/edit3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="内容" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="长度" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="数据类型" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="属性"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_kb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_bottom_bt_ll"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/bt_ee_all"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全选"/>
+            <Button
+                android:id="@+id/bt_ee_reall"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消全选"/>
+            <Button
+                android:id="@+id/bt_ee_read"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="读" />
+            <Button
+                android:id="@+id/bt_ee_write"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="写" />
+            <Button
+                android:id="@+id/bt_ee_add"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="添加参数"/>
+            <Button
+                android:id="@+id/bt_ee_del"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="删除参数"/>
+            <Button
+                android:id="@+id/bt_ee_import"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="读取文件"/>
+            <Button
+                android:id="@+id/bt_ee_export"
+                style="@style/style_frag_bt_eeprom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存文件"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

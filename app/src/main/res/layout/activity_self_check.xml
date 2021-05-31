@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lamp_selfcheck_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.bete.lamp.ui.normal.SelfCheckActivity">
+<!--    android:background="@drawable/ui_selfcheck"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/linearlayout_shap"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <com.bete.lamp.TitleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gothrought"
+            app:title_middle_visibility="0x00000008"
+            app:title_right_visibility="0x00000008" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="432px"
+        android:layout_height="223px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="249px"
+        app:srcCompat="@drawable/lamp_selfcheck_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="250dp"
+        android:gravity="center"
+        android:text="欢迎文字"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="230px"
+        android:background="@drawable/gothrought">
+
+        <com.bete.lamp.customWidget.ProgressSeek
+            android:id="@+id/ps_selfcheck"
+            android:layout_width="630dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_selfcheck_tishi"
+        android:layout_width="600px"
+        android:layout_height="33px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="177px"
+        android:gravity="center"
+        android:text="自检. . . 18%"
+        android:textColor="#fff"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="119dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="0dp"
+        android:gravity=""
+        android:text="V1.3"
+        android:textColor="#303030"
+        android:textSize="@dimen/actions_item_font"
+        android:visibility="gone"/>
+</RelativeLayout>

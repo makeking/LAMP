@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/gothrought"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61px"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_settingproject_return"
+            android:layout_width="155px"
+            android:layout_height="61px"
+            android:background="@drawable/bt_lamp_button_selector"
+            android:textColor="@color/bt_lamp_button_text_color"
+            android:text="返回"
+            android:textSize="10pt"
+            android:layout_gravity="left" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_settingproject_save"
+            android:layout_width="155px"
+            android:layout_height="61px"
+            android:background="@drawable/bt_lamp_button_selector"
+            android:textColor="@color/bt_lamp_button_text_color"
+            android:text="保存"
+            android:textSize="10pt" />
+        <Space
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight="1">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/settingproject_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/settingproject_bottom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent" />
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:background="@drawable/linearlayout_shap"-->
+<!--    android:focusable="true"-->
+<!--    android:focusableInTouchMode="true"-->
+<!--    android:gravity="center"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/bt_settingproject_return"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:textSize="12sp" />-->
+
+<!--        <Space-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/bt_settingproject_save"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="保存"-->
+<!--            android:textSize="12sp" />-->
+<!--    </LinearLayout>-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight="1">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <android.support.v4.view.ViewPager-->
+<!--                android:id="@+id/settingproject_viewpager"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="300dp" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <net.lucode.hackware.magicindicator.MagicIndicator-->
+<!--        android:id="@+id/settingproject_bottom_indicator"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@android:color/transparent" />-->
+<!--</LinearLayout>-->

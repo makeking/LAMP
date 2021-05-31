@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="235px"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/mc100_search_list_item_0"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--android:background="@drawable/mc100_search_list_item_0"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--android:background="@drawable/item_spot_touch_bg"-->
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lamp_content_xiankuang_normal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="步骤"
+        android:textSize="10pt"
+        android:textColor="#4D4D4D"/>
+
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/et_lamp_edittext_fang_selector"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="35--90"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#4D4D4D"
+        android:textSize="10pt"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/et_lamp_edittext_fang_selector"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="10"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#4D4D4D"
+        android:textSize="10pt"/>
+        <!--android:imeOptions="flagNoExtractUi"-->
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/et_lamp_edittext_fang_selector"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="大于5"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#4D4D4D"
+        android:textSize="10pt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lamp_content_xiankuang_normal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <Switch
+        android:id="@+id/sw_isread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:showText="true"
+        android:switchTextAppearance="@style/SwitchTheme"
+        android:textOff="关"
+        android:textOn="开"
+        android:checked="false"
+        android:textSize="10pt"
+        android:thumb="@drawable/lamp_switch_thumb_selector"
+        android:track="@drawable/lamp_switch_track_selector"
+        />
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@+id/edit"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/colorPrimary" />-->
+</LinearLayout>

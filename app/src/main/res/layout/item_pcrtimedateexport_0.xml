@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="46px"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="0dp"
+        android:layout_weight="187"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#4D4D4D"/>
+<!--    android:background="@drawable/lamp_chaxun1_content1_1"-->
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="0dp"
+        android:layout_weight="752"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#4D4D4D"/>
+<!--    android:background="@drawable/lamp_chaxun1_content1_2"-->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="35"
+        android:gravity="center"
+        android:textColor="#4D4D4D"
+        android:visibility="gone"/>
+
+</LinearLayout>

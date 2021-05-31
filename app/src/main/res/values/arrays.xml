@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eepromtype" >
+        <item >""</item>
+        <item >"Int"</item>
+        <item >"Float"</item>
+        <item >"Double"</item>
+        <item >"Short"</item>
+        <item >"Char"</item>
+        <item >"Unsigned int"</item>
+        <item >"Unsigned short"</item>
+        <item >""</item>
+    </string-array>
+</resources>

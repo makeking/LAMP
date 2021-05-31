@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lamppcr</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tishi">提示</string>
+    <string name="queding">确定</string>
+    <string name="quxiao">取消</string>
+    <string name="yiqixuyaozijian">仪器需要自检，是否进行自检？</string>
+    <string name="zijianshibai_shifouchongxinzijian">自检失败，是否重新进行自检？</string>
+    <string name="dangqianyinyongqueshaobiyaoquanxian">当前应用缺少必要权限，该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。</string>
+    <string name="ruanjianbanben">软件版本</string>
+    <string name="k_jiaozhunfanwei">K校准范围</string>
+    <string name="yunweimoshi">设备管理</string>
+</resources>

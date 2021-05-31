@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@drawable/gothrought"
+    tools:context="com.bete.lamp.ui.normal.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:background="@drawable/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/lamp_main_pic">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="180dp"
+                android:text="Welcome  to  Easy  Amp"
+                android:textColor="@drawable/white"
+                android:textSize="16pt" />
+
+            <TextView
+                android:id="@+id/tv_product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="237dp"
+                android:text="HWTS1600"
+                android:textColor="@drawable/white"
+                android:textSize="16pt" />
+
+            <com.bete.lamp.TitleLayout
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="47dp"
+                android:background="@drawable/gothrought"
+                app:title_left_text="2020-05-20 15:20"
+                app:title_middle_visibility="0x00000008"
+                app:title_right_visibility="0x00000008" />
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="5">-->
+
+<!--            <com.bete.lamp.TitleLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="100dp"-->
+<!--                android:layout_marginBottom="111dp"-->
+<!--                android:background="@drawable/gothrought"-->
+<!--                app:title_middle_visibility="0x00000008"-->
+<!--                app:title_right_visibility="0x00000008" />-->
+<!--        </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/main_bt"
+                android:layout_marginTop="2dp"
+                android:drawableTop="@drawable/bt_lamp_main_zhuye_selector"
+                android:drawableBottom="@drawable/bt_lamp_main_strip_selector"
+                android:clickable="false"
+                android:text="主页" />
+
+            <Button
+                style="@style/main_bt"
+                android:layout_marginTop="2dp"
+                android:drawableTop="@drawable/bt_lamp_main_project_selector"
+                android:drawableBottom="@drawable/bt_lamp_main_strip_selector"
+                android:onClick="goXiangMuHandle"
+                android:text="项目" />
+
+                <Button
+                    android:id="@+id/bt_shiyan"
+                    style="@style/main_bt"
+                    android:layout_marginTop="2dp"
+                    android:drawableTop="@drawable/bt_lamp_main_check_selector"
+                    android:drawableBottom="@drawable/bt_lamp_main_strip_selector"
+                    android:onClick="goShiYanHandle"
+                    android:text="检测" />
+
+            <Button
+                style="@style/main_bt"
+                android:layout_marginTop="2dp"
+                android:drawableTop="@drawable/bt_lamp_main_search_selector"
+                android:drawableBottom="@drawable/bt_lamp_main_strip_selector"
+                android:onClick="goChaXunHandle"
+                android:text="数据查询" />
+
+            <Button
+                style="@style/main_bt"
+                android:layout_marginTop="2dp"
+                android:checked="true"
+                android:drawableTop="@drawable/bt_lamp_main_help_selector"
+                android:drawableBottom="@drawable/bt_lamp_main_strip_selector"
+                android:onClick="goHelpHandle"
+                android:text="帮助" />
+
+            <Button
+                style="@style/main_bt"
+                android:layout_marginTop="2dp"
+                android:drawableTop="@drawable/bt_lamp_main_setting_selector"
+                android:drawableBottom="@drawable/bt_lamp_main_strip_selector"
+                android:onClick="goSheZhiHandle"
+                android:text="设置参数" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

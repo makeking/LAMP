@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/top_openpicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        android:src="@drawable/s_img"
+        />
+</RelativeLayout>

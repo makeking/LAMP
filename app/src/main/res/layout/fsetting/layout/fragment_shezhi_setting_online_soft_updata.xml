@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lamp_setting_fragment_label" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="软件升级"
+            android:textColor="#4d4d4d"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/bt_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/bt_lamp_button_selector"
+                android:text="升级检测"
+                android:textColor="@color/bt_lamp_button_text_color"
+                android:textSize="10pt"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/bt_updata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/bt_lamp_button_selector"
+                android:enabled="false"
+                android:textColor="@color/bt_lamp_button_text_color"
+                android:textSize="10pt"
+                android:text="升级" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tv_response"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="#AEB2AE"
+                android:textSize="20sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+</LinearLayout>

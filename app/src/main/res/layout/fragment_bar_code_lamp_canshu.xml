@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_dingxing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75px"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="定 性 参 数"
+            android:textColor="#ff4D4D4D"
+            android:textSize="8pt"/>
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_dx_settingproject_save"-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="保存"/>-->
+
+        <LinearLayout
+            android:layout_width="940px"
+            android:layout_height="306px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63px"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0px">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="通道"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="FAM"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="VIC/HEX"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="ROX"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Cy5"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fast_jieguo_title"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="阈值"
+                    android:textColor="#ff000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_dx_yuzhi_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_yuzhi_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_yuzhi_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/et_dx_yuzhi_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="参考值"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_ref_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/et_dx_ref_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/et_dx_ref_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_ref_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="ΔRn"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_rn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_rn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_rn_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_rn_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="PC"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dx_pc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_pc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dx_pc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dx_pc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="NC"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dx_nc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dx_nc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dx_nc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dx_nc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dingliang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75px"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="定 量 参 数"
+            android:textColor="#ff4D4D4D"
+            android:textSize="8pt"/>
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_dl_settingproject_save"-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="保存"/>-->
+
+        <LinearLayout
+            android:layout_width="940px"
+            android:layout_height="306px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63px"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0px">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="通道"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="FAM"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="VIC/HEX"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="ROX"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lamp_content_xiankuang_normal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Cy5"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fast_jieguo_title"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="阈值"
+                    android:textColor="#ff000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_dl_yuzhi_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_yuzhi_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_yuzhi_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_yuzhi_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="参考值"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_ref_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_ref_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_ref_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_ref_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="ΔRn"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_rn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_rn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_rn_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_rn_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="K"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_k_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_k_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_k_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_k_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="B"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_b_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_b_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_b_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_b_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="PC"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_pc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_pc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_pc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_pc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="NC"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_nc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_nc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_nc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_nc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:background="@drawable/lamp_title_xiankuang"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="标"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/et_dl_biao"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_dl_biao_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_biao_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_biao_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_dl_biao_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lamp_edittext_fang_selector"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#ff4D4D4D"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

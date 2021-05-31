@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lamp_setting_fragment_label" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="服务器设置"
+            android:textColor="#4d4d4d"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72px"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|right"
+        android:paddingHorizontal="10dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="服务器开关:"
+            android:textColor="#4d4d4d"
+            android:textSize="10pt"/>
+
+        <Switch
+            android:id="@+id/switch_serverable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTheme"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="12pt"
+            android:thumb="@drawable/lamp_switch_thumb_selector"
+            android:track="@drawable/lamp_switch_track_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:text="服务器IP:"
+                    android:textColor="#4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_serverip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/et_lamp_server_input_selector"
+                    android:gravity="center"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:text="上传地址:"
+                    android:textColor="#4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_updateaddr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/et_lamp_server_input_selector"
+                    android:gravity="center"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="超时时间:"
+                    android:textColor="#4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_timeout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/et_lamp_server_input_selector"
+                    android:gravity="center"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="端口地址:"
+                    android:textColor="#4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_port"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/et_lamp_server_input_selector"
+                    android:gravity="center"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="下载地址:"
+                    android:textColor="#4D4D4D"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/et_downloadaddr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/et_lamp_server_input_selector"
+                    android:gravity="center"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50px"/>
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="155px"
+        android:layout_height="61px"
+        android:layout_gravity="center"
+        android:background="@drawable/bt_lamp_button_selector"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/rb_lamp_button_text_color"
+        android:textSize="10pt" />
+</LinearLayout>

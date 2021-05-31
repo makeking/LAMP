@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_guang_select"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0px"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_chaxun_step2_all"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="33px"
+            android:background="@drawable/rb_lamp_result_all_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="all"
+            android:textSize="10pt"
+            android:textColor="@color/bt_lamp_button_text_color"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chaxun_step2_guang"
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lamp_chaxun_chat_result_background"
+        android:layout_below="@id/ll_guang_select"
+        android:layout_above="@id/ll_button"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="525"
+            android:orientation="vertical"
+            android:padding="5px">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart_chaxun_step2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3px"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="归一化"
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="时间"
+                    android:textSize="6pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_chaxun_step2_limit"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/et_chaxun_step2_limit"
+                    android:layout_width="280px"
+                    android:layout_height="50px"
+                    android:paddingLeft="70px"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/lamp_yuzhi_background"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="8pt"
+                    android:text="45"
+                    android:textColor="#4D4D4D"/>
+
+                <TextView
+                    android:layout_width="120px"
+                    android:layout_height="50px"
+                    android:layout_alignLeft="@id/et_chaxun_step2_limit"
+                    android:background="@drawable/gothrought"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="阈值"
+                    android:textColor="#086197"
+                    android:textSize="8pt" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="500"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <LinearLayout
+                android:layout_width="472px"
+                android:layout_height="37px"
+                android:layout_gravity="center"
+                android:background="@drawable/lamp_result_title"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="ID"
+                    android:textSize="8pt"
+                    android:textColor="#4D4D4D"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/item_weizhi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="90"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="位置"
+                    android:textSize="8pt"
+                    android:textColor="#4D4D4D"/>
+
+                <TextView
+                    android:id="@+id/item_bianhao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="91"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="编号"
+                    android:textSize="8pt"
+                    android:textColor="#4D4D4D" />
+
+                <TextView
+                    android:id="@+id/item_projectname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="91"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="项目"
+                    android:textSize="8pt"
+                    android:textColor="#4D4D4D" />
+
+                <TextView
+                    android:id="@+id/item_ct"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="91"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Tt值"
+                    android:textSize="8pt"
+                    android:textColor="#4D4D4D" />
+
+                <TextView
+                    android:id="@+id/item_jieguo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="91"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="结果"
+                    android:textSize="8pt"
+                    android:textColor="#4D4D4D"/>
+
+                <!--<TextView-->
+                <!--android:id="@+id/item_danwei"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:lines="1"-->
+                <!--android:text="(mg/mol)"-->
+                <!--android:textSize="10sp" />-->
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_chaxun_step2_jieguo"
+                android:layout_width="472px"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_chaxun_step2_print"
+            android:layout_width="150px"
+            android:layout_height="60px"
+            android:background="@drawable/bt_lamp_result_button_selector"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="结果打印"
+            android:textColor="@color/bt_lamp_button_text_color"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/bt_chaxun_step2_export"
+            android:layout_width="150px"
+            android:layout_height="60px"
+            android:layout_marginHorizontal="17px"
+            android:background="@drawable/bt_lamp_result_button_selector"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="数据导出"
+            android:textColor="@color/bt_lamp_button_text_color"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/bt_chaxun_step2_done"
+            android:layout_width="150px"
+            android:layout_height="60px"
+            android:background="@drawable/bt_lamp_result_button_selector"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="结果返回"
+            android:textColor="@color/bt_lamp_button_text_color"
+            android:textSize="10pt"/>
+    </LinearLayout>
+</RelativeLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/linearlayout_shap"-->
+<!--    android:focusable="true"-->
+<!--    android:focusableInTouchMode="true"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="6"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cb_chaxun_step2_all"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:background="@drawable/rb_mc100_report_item_selector"-->
+<!--                    android:button="@null"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="all"-->
+<!--                    android:textSize="10sp" />-->
+
+<!--                <android.support.v7.widget.RecyclerView-->
+<!--                    android:id="@+id/rv_chaxun_step2_guang"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="43dp"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="70dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentLeft="true"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="0dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="归一化"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="58dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginRight="0dp"-->
+<!--                            android:layout_marginBottom="25dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="时间"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <com.github.mikephil.charting.charts.LineChart-->
+<!--                            android:id="@+id/chart_chaxun_step2"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/ll_chaxun_step2_limit"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:ellipsize="marquee"-->
+<!--                            android:gravity="left|center_vertical"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:text="阈值"-->
+<!--                            android:textColor="@color/bottom_text_color"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/et_chaxun_step2_limit"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:background="@android:drawable/edit_text"-->
+<!--                            android:ems="10"-->
+<!--                            android:imeOptions="flagNoExtractUi|actionDone"-->
+<!--                            android:inputType="numberDecimal"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textSize="10sp" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:background="@drawable/linearlayout_shap"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/item_id"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="ID"-->
+<!--                            android:visibility="gone" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/item_weizhi"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="位置"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/item_bianhao"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="编号"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/item_projectname"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="项目"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/item_ct"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="Tt值"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/item_jieguo"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_weight="1.5"-->
+<!--                            android:gravity="center"-->
+<!--                            android:lines="1"-->
+<!--                            android:text="结果"-->
+<!--                            android:textSize="10sp" />-->
+
+<!--                        &lt;!&ndash;<TextView&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:id="@+id/item_danwei"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:gravity="left|center_vertical"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:lines="1"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:text="(mg/mol)"&ndash;&gt;-->
+<!--                            &lt;!&ndash;android:textSize="10sp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <android.support.v7.widget.RecyclerView-->
+<!--                        android:id="@+id/rv_chaxun_step2_jieguo"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/bt_chaxun_step2_print"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:text="结果\n打印"-->
+<!--                android:textSize="10sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/bt_chaxun_step2_export"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:text="数据\n导出"-->
+<!--                android:textSize="10sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/bt_chaxun_step2_done"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:text="结果\n返回"-->
+<!--                android:textSize="10sp" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->

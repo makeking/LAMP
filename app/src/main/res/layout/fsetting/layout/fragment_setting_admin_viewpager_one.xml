@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_deviceno"
+                android:drawableTop="@drawable/bt_lamp_setting_deviceno_selector"
+                android:text="设备编号设置"
+                 />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_deviceinfo"
+                android:drawableTop="@drawable/bt_lamp_setting_deviceinfo_selector"
+                android:text="设备信息"
+                android:visibility="gone" />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:drawableTop="@drawable/bt_lamp_setting_deviceinfo_selector"
+                android:text="网络设置"
+                android:visibility="gone"/>
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_time"
+                android:drawableTop="@drawable/bt_lamp_setting_time_selector"
+                android:text="时间日期" />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_server"
+                android:drawableTop="@drawable/bt_lamp_setting_server_selector"
+                android:text="服务器设置" />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_selfcheck"
+                android:drawableTop="@drawable/bt_lamp_setting_selfcheck_selector"
+                android:text="自检"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_enable"
+                android:drawableTop="@drawable/bt_lamp_setting_enable_selector"
+                android:text="设置开关" />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_passwordchange"
+                android:drawableTop="@drawable/bt_lamp_setting_password_selector"
+                android:text="密码修改" />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_softupdate"
+                android:drawableTop="@drawable/bt_lamp_setting_softupdata_selector"
+                android:text="软件升级" />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_hardwareupdate"
+                android:drawableTop="@drawable/bt_lamp_setting_hardupdata_selector"
+                android:text="固件升级" android:visibility="gone"/>
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_logexport"
+                android:drawableTop="@drawable/bt_lamp_setting_logexport_selector"
+                android:text="日志导出"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

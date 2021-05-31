@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_wifi_open_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="打开/关闭" />
+
+            <Button
+                android:id="@+id/bt_wifi_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="扫描" />
+        </LinearLayout>
+
+    <com.example.mywificonnect.ui.component.MyListView
+        android:id="@+id/freelook_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1.0dip"
+        android:listSelector="#00000000" />
+
+
+</LinearLayout>

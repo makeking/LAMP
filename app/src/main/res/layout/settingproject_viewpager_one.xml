@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18px"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="30px">
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="项目名称 :"
+            android:textColor="#FF5E5C5C"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/et_filename"
+            android:layout_width="197px"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_lamp_edittext_yuan_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="115px"
+            android:gravity="center"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="text|textPersonName"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:text="20291230"
+            android:textColor="#FF4D4D4D"
+            android:textSize="10pt"
+            android:paddingHorizontal="20px"/>
+
+        <TextView
+            android:layout_width="70px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="360px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="方式 :"
+            android:textColor="#FF5E5C5C"
+            android:textSize="8pt"/>
+
+        <com.bete.lamp.customWidget.EditSpinner
+            android:id="@+id/sp_project_type"
+            android:layout_width="197px"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_lamp_spinner_yuan_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="435px"
+            android:gravity="center"
+            android:paddingRight="40px"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:text="定性"
+            android:textColor="#FF4D4D4D"
+            android:textSize="8pt" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/projecttype"
+                android:button="@null"
+                android:gravity="center"
+                android:text="定性"
+                android:textColor="@color/bottom_text_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/projecttype"
+                android:button="@null"
+                android:gravity="center"
+                android:text="定量"
+                android:textColor="@color/bottom_text_color"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="70px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="680px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="批号 :"
+            android:textColor="#FF5E5C5C"
+            android:textSize="8pt"/>
+
+        <EditText
+            android:id="@+id/et_lot"
+            android:layout_width="197px"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_lamp_edittext_yuan_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="755px"
+            android:gravity="center"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="20191023001"
+            android:textColor="#FF4D4D4D"
+            android:textSize="10pt"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="30px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="有效期"
+            android:textColor="#FF000000"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/et_limittime"
+            style="@style/style_myedittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#FF000000"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="内参通道 :"
+            android:textColor="#FF5E5C5C"
+            android:textSize="8pt"/>
+
+        <com.bete.lamp.customWidget.EditSpinner
+            android:id="@+id/sp_innerref"
+            android:layout_width="197px"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_lamp_spinner_yuan_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="115px"
+            android:gravity="center"
+            android:paddingRight="40px"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:text="请选择"
+            android:textColor="#FF4D4D4D"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="70px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="360px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="内参 :"
+            android:textColor="#FF5E5C5C"
+            android:textSize="8pt"/>
+
+        <EditText
+            android:id="@+id/et_neican"
+            android:layout_width="197px"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_lamp_edittext_yuan_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="435px"
+            android:gravity="center"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#FF4D4D4D"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/tv_danwei"
+            android:layout_width="70px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="680px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="单位 :"
+            android:textColor="#FF5E5C5C"
+            android:textSize="8pt"/>
+
+        <com.bete.lamp.customWidget.EditSpinner
+            android:id="@+id/sp_danwei"
+            android:layout_width="197px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="755px"
+            android:background="@drawable/et_lamp_spinner_yuan_selector"
+            android:gravity="center"
+            android:paddingRight="40px"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:text="请选择"
+            android:textColor="#FF4D4D4D"
+            android:textSize="8pt"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55px"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="检 测 通 道 设 置"
+        android:textColor="#FF5E5C5C"
+        android:textSize="8pt" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="186px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="215px"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:background="@drawable/lamp_title_xiankuang"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="通道"
+                android:textColor="#ffFFFFFF"
+                android:textSize="12pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@drawable/lamp_content_xiankuang_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="名称"
+                android:textColor="#ff4D4D4D"
+                android:textSize="8pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_content_xiankuang_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="是否检测"
+                android:textColor="#ff4D4D4D"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:background="@drawable/tv_lamp_title_xiankuang_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="FAM"
+                android:textColor="@color/tv_lamp_title_xiankuang_color"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/et_name_1"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:inputType="text|textPersonName"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#ff4D4D4D"
+                android:textSize="8pt" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/rb_checkbox_selector" />
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:gravity="center"-->
+            <!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/cb_enable_1"-->
+            <!--                    android:layout_width="84px"-->
+            <!--                    android:layout_height="45px"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:background="@drawable/rb_checkbox_selector"-->
+            <!--                    android:button="@null" />-->
+            <!--            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:background="@drawable/tv_lamp_title_xiankuang_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="VIC/HEX"
+                android:textColor="@color/tv_lamp_title_xiankuang_color"
+                android:textSize="12pt"/>
+
+            <EditText
+                android:id="@+id/et_name_2"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:inputType="text|textPersonName"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#ff4D4D4D"
+                android:textSize="8pt"/>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:gravity="center"-->
+            <!--                android:background="@drawable/et_lamp_edittext_fang_selector">-->
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/cb_enable_2"-->
+            <!--                    android:layout_width="84px"-->
+            <!--                    android:layout_height="45px"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:background="@drawable/rb_checkbox_selector"-->
+            <!--                    android:button="@null" />-->
+            <!--            </LinearLayout>-->
+            <CheckBox
+                android:id="@+id/cb_enable_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/rb_checkbox_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_3"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:background="@drawable/tv_lamp_title_xiankuang_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="ROX"
+                android:textColor="@color/tv_lamp_title_xiankuang_color"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/et_name_3"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:inputType="text|textPersonName"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#ff4D4D4D"
+                android:textSize="8pt" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/rb_checkbox_selector" />
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:gravity="center"-->
+            <!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/cb_enable_3"-->
+            <!--                    android:layout_width="84px"-->
+            <!--                    android:layout_height="45px"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:background="@drawable/rb_checkbox_selector"-->
+            <!--                    android:button="@null" />-->
+            <!--            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_4"
+                android:layout_width="match_parent"
+                android:layout_height="66px"
+                android:background="@drawable/tv_lamp_title_xiankuang_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Cy5"
+                android:textColor="@color/tv_lamp_title_xiankuang_color"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/et_name_4"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:inputType="text|textPersonName"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#ff4D4D4D"
+                android:textSize="8pt" />
+
+            <CheckBox
+                android:id="@+id/cb_enable_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/et_lamp_edittext_fang_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/rb_checkbox_selector" />
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:gravity="center"-->
+            <!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/cb_enable_4"-->
+            <!--                    android:layout_width="84px"-->
+            <!--                    android:layout_height="45px"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:background="@drawable/rb_checkbox_selector"-->
+            <!--                    android:button="@null" />-->
+            <!--            </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="186px"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="215px"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingHorizontal="30px">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="66px"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_title_xiankuang"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="通道"-->
+<!--                android:textColor="#ffFFFFFF"-->
+<!--                android:textSize="12pt" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_title_xiankuang"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="FAM"-->
+<!--                android:textColor="#ffFFFFFF"-->
+<!--                android:textSize="12pt" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_title_xiankuang"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="VIC/HEX"-->
+<!--                android:textColor="#ffFFFFFF"-->
+<!--                android:textSize="12pt" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_title_xiankuang"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="ROX"-->
+<!--                android:textColor="#ffFFFFFF"-->
+<!--                android:textSize="12pt"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_title_xiankuang"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Cy5"-->
+<!--                android:textColor="#ffFFFFFF"-->
+<!--                android:textSize="12pt"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60px"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_content_xiankuang_normal"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="名称"-->
+<!--                android:textColor="#ff4D4D4D"-->
+<!--                android:textSize="8pt" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_name_1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/et_lamp_edittext_fang_selector"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:ems="10"-->
+<!--                android:imeOptions="flagNoExtractUi|actionDone"-->
+<!--                android:inputType="text|textPersonName"-->
+<!--                android:maxLength="6"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="#ff4D4D4D"-->
+<!--                android:textSize="8pt" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_name_2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/et_lamp_edittext_fang_selector"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:ems="10"-->
+<!--                android:imeOptions="flagNoExtractUi|actionDone"-->
+<!--                android:inputType="text|textPersonName"-->
+<!--                android:maxLength="6"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="#ff4D4D4D"-->
+<!--                android:textSize="8pt" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_name_3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/et_lamp_edittext_fang_selector"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:ems="10"-->
+<!--                android:imeOptions="flagNoExtractUi|actionDone"-->
+<!--                android:inputType="text|textPersonName"-->
+<!--                android:maxLength="6"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="#ff4D4D4D"-->
+<!--                android:textSize="8pt" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_name_4"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/et_lamp_edittext_fang_selector"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:ems="10"-->
+<!--                android:imeOptions="flagNoExtractUi|actionDone"-->
+<!--                android:inputType="text|textPersonName"-->
+<!--                android:maxLength="6"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="#ff4D4D4D"-->
+<!--                android:textSize="8pt"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/lamp_content_xiankuang_normal"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="是否检测"-->
+<!--                android:textColor="#ff4D4D4D"-->
+<!--                android:textSize="8pt"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cb_enable_1"-->
+<!--                    android:layout_width="84px"-->
+<!--                    android:layout_height="45px"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/rb_checkbox_selector"-->
+<!--                    android:button="@null" />-->
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cb_enable_2"-->
+<!--                    android:layout_width="84px"-->
+<!--                    android:layout_height="45px"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/rb_checkbox_selector"-->
+<!--                    android:button="@null" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cb_enable_3"-->
+<!--                    android:layout_width="84px"-->
+<!--                    android:layout_height="45px"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/rb_checkbox_selector"-->
+<!--                    android:button="@null" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/lamp_content_xiankuang_normal">-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cb_enable_4"-->
+<!--                    android:layout_width="84px"-->
+<!--                    android:layout_height="45px"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/rb_checkbox_selector"-->
+<!--                    android:button="@null" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+</RelativeLayout>
+

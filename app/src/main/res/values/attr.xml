@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleLayout">
+        <attr name="title_middle_text" format="string"/>
+        <attr name="title_left_text" format="string"/>
+        <attr name="title_right_text" format="string"/>
+        <attr name="title_middle_visibility" format="integer"/>
+        <attr name="title_left_visibility" format="integer"/>
+        <attr name="title_right_visibility" format="integer"/>
+    </declare-styleable>
+
+
+</resources>

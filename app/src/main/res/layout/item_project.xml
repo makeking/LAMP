@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="61px"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <!--android:focusable="true"-->
+    <!--android:foreground="@drawable/fast_project_item_down"-->
+    <!--android:background="@drawable/bg_fast_project_item_selector"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--android:background="@drawable/mc100_search_list_item_0"-->
+
+    <!--android:background="@drawable/mc100_search_list_item_0"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--android:background="@drawable/item_spot_touch_bg"-->
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/lamp_content_xiankuang_normal"
+            android:text="item_name1"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/lamp_content_xiankuang_normal"
+            android:text="item_name2"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_name3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/lamp_content_xiankuang_normal"
+            android:text="item_name3"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_name4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/lamp_content_xiankuang_normal"
+            android:text="item_name4"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_name5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/lamp_content_xiankuang_normal"
+            android:text="lot"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/edit"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@color/colorPrimary" />-->
+</LinearLayout>

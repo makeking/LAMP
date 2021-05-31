@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="75px"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="扩 增 步 骤 设 置"
+        android:textColor="#ff4D4D4D"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="940px"
+        android:layout_height="310px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="0px">
+
+        <LinearLayout
+            android:layout_width="235px"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_title_xiankuang"
+                android:gravity="center"
+                android:text="步骤"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10pt" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_title_xiankuang"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="目 标 温 度 ( ℃ )"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_title_xiankuang"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="保 持 时 间  ( min )"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_title_xiankuang"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="检 测 间 隔 ( S )"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/lamp_title_xiankuang"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="是 否 检 测"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10pt" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:text="1" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="numberDecimal"-->
+        <!--android:singleLine="true"-->
+        <!--android:hint="30&#45;&#45;120"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit2_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+        <!--&lt;!&ndash;android:imeOptions="flagNoExtractUi"&ndash;&gt;-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit3_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true"-->
+        <!--android:hint="小于ID"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit4_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_isread_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:layout_gravity="center" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:text="1" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="numberDecimal"-->
+        <!--android:singleLine="true"-->
+        <!--android:hint="30&#45;&#45;120"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit2_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+        <!--&lt;!&ndash;android:imeOptions="flagNoExtractUi"&ndash;&gt;-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit3_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true"-->
+        <!--android:hint="小于ID"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit4_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_isread_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:layout_gravity="center" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:text="1" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="numberDecimal"-->
+        <!--android:singleLine="true"-->
+        <!--android:hint="30&#45;&#45;120"/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit2_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+        <!--&lt;!&ndash;android:imeOptions="flagNoExtractUi"&ndash;&gt;-->
+        <!--<EditText-->
+        <!--android:id="@+id/edit3_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true"-->
+        <!--android:hint="小于ID"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit4_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:ems="10"-->
+        <!--android:imeOptions="flagNoExtractUi|actionDone"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_isread_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--style="@style/style_myedittext"-->
+        <!--android:layout_gravity="center" />-->
+        <!--</LinearLayout>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_liucheng_step"
+            android:layout_width="705px"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="300dp">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:gravity="center"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="扩增步骤设置"-->
+<!--        android:textColor="#ff000000"-->
+<!--        android:textSize="12sp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="660dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingHorizontal="10dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/fast_jieguo_title"-->
+<!--                android:gravity="center"-->
+<!--                android:text="步骤"-->
+<!--                android:textColor="#FF000000"-->
+<!--                android:textSize="12sp" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/fast_jieguo_title"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="目标温度(℃)"-->
+<!--                android:textColor="#FF000000"-->
+<!--                android:textSize="12sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/fast_jieguo_title"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="保持时间(min)"-->
+<!--                android:textColor="#FF000000"-->
+<!--                android:textSize="12sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/fast_jieguo_title"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="检测间隔(S)"-->
+<!--                android:textColor="#FF000000"-->
+<!--                android:textSize="12sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/fast_jieguo_title"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="是否检测"-->
+<!--                android:textColor="#FF000000"-->
+<!--                android:textSize="12sp" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/tv_1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:text="1" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit_1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="numberDecimal"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:hint="30&#45;&#45;120"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit2_1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true" />&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;android:imeOptions="flagNoExtractUi"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit3_1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:hint="小于ID"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit4_1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true" />&ndash;&gt;-->
+<!--            &lt;!&ndash;<CheckBox&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/cb_isread_1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center" />&ndash;&gt;-->
+<!--        &lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+<!--        &lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/tv_2"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:text="1" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit_2"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="numberDecimal"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:hint="30&#45;&#45;120"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit2_2"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true" />&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;android:imeOptions="flagNoExtractUi"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit3_2"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:hint="小于ID"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit4_2"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true" />&ndash;&gt;-->
+<!--            &lt;!&ndash;<CheckBox&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/cb_isread_2"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center" />&ndash;&gt;-->
+<!--        &lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+<!--        &lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/tv_3"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:text="1" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit_3"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="numberDecimal"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:hint="30&#45;&#45;120"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit2_3"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true" />&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;android:imeOptions="flagNoExtractUi"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit3_3"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:hint="小于ID"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<EditText&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/edit4_3"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:imeOptions="flagNoExtractUi|actionDone"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:singleLine="true" />&ndash;&gt;-->
+<!--            &lt;!&ndash;<CheckBox&ndash;&gt;-->
+<!--                &lt;!&ndash;android:id="@+id/cb_isread_3"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+<!--                &lt;!&ndash;style="@style/style_myedittext"&ndash;&gt;-->
+<!--                &lt;!&ndash;android:layout_gravity="center" />&ndash;&gt;-->
+<!--        &lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+<!--        <android.support.v7.widget.RecyclerView-->
+<!--            android:id="@+id/rv_liucheng_step"-->
+<!--            android:layout_width="480dp"-->
+<!--            android:layout_height="match_parent" />-->
+<!--    </LinearLayout>-->
+<!--</RelativeLayout>-->

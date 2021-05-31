@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#55555555"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="693px"
+        android:layout_height="392px"
+        android:padding="20px"
+        android:layout_gravity="center"
+        android:background="@drawable/lamp_scan_background">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_18_ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scan_message_title"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textColor="#4C4C4C"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <ScrollView
+            android:id="@+id/content"
+            android:layout_width="295px"
+            android:layout_height="216px"
+            android:background="@drawable/lamp_scan_pic"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="50px"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/text_16_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingHorizontal="30dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#086197"
+                android:textSize="12pt"
+                android:text="请扫码"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="20px"
+            android:background="@drawable/bt_lamp_cancel_cha_selector"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="OK"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+</FrameLayout>

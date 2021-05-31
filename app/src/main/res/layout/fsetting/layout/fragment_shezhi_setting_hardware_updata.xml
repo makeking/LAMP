@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lamp_setting_fragment_label" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="固件升级"
+            android:textColor="#4d4d4d"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"/>
+
+    <LinearLayout
+        android:layout_width="879px"
+        android:layout_height="600px"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bt_getbootversion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_whitebutton_selector"
+                    android:onClick="goBootVersionButtonHandle"
+                    android:text="获取boot版本"/>
+
+                <Button
+                    android:id="@+id/bt_selecthexfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_whitebutton_selector"
+                    android:onClick="goHexFileSelectButtonHandle"
+                    android:text="选择文件" />
+
+                <Button
+                    android:id="@+id/bt_flasherase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_whitebutton_selector"
+                    android:onClick="goFlashEraseButtonHandle"
+                    android:text="Flash擦除" />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bt_program"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_whitebutton_selector"
+                    android:onClick="goFlashProgramButtonHandle"
+                    android:text="Flash编程" />
+
+                <Button
+                    android:id="@+id/bt_crccheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_whitebutton_selector"
+                    android:onClick="goCRCCheckButtonHandle"
+                    android:text="CRC校验" />
+
+                <Button
+                    android:id="@+id/bt_jmpapp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_whitebutton_selector"
+                    android:onClick="goJmpAppButtonHandle"
+                    android:text="启动应用程序" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_mcureset"
+                    android:layout_width="155px"
+                    android:layout_height="61px"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bt_lamp_button_selector"
+                    android:onClick="goMcuResetButtonHandle"
+                    android:text="复位"
+                    android:textSize="8pt"
+                    android:textColor="@color/bt_lamp_button_text_color"/>
+
+                <Button
+                    android:id="@+id/bt_xinselecthexfile"
+                    android:layout_width="155px"
+                    android:layout_height="61px"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bt_lamp_button_selector"
+                    android:onClick="goHexFileSelectButtonHandle"
+                    android:text="选择文件"
+                    android:textColor="@color/bt_lamp_button_text_color"
+                    android:textSize="8pt"/>
+
+                <Button
+                    android:id="@+id/bt_xinprogram"
+                    android:layout_width="155px"
+                    android:layout_height="61px"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bt_lamp_button_selector"
+                    android:onClick="goXinFlashProgramButtonHandle"
+                    android:textColor="@color/bt_lamp_button_text_color"
+                    android:textSize="8pt"
+                    android:text="Flash编程" />
+
+                <Button
+                    android:id="@+id/bt_xinjmpapp"
+                    android:layout_width="155px"
+                    android:layout_height="61px"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bt_lamp_button_selector"
+                    android:onClick="goJmpAppButtonHandle"
+                    android:textSize="8pt"
+                    android:textColor="@color/bt_lamp_button_text_color"
+                    android:text="启动应用程序" />
+
+                <Spinner
+                    android:id="@+id/spin_bootorapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="61px"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dropdown" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#AEB2AE"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

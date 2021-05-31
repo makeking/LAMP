@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lamp_setting_fragment_label" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="设备开关"
+            android:textColor="#4d4d4d"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61px"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|right"
+            android:text="导航键开关:"
+            android:textColor="#4d4d4d"
+            android:padding="10px"
+            android:textSize="10pt"/>
+
+        <Switch
+            android:id="@+id/switch_daohangjianable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTheme"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="12pt"
+            android:thumb="@drawable/lamp_switch_thumb_selector"
+            android:track="@drawable/lamp_switch_track_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61px"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|right"
+            android:text="主应用:"
+            android:textColor="#4d4d4d"
+            android:padding="10px"
+            android:textSize="10pt"/>
+
+        <Switch
+            android:id="@+id/switch_homeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTheme"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="12pt"
+            android:thumb="@drawable/lamp_switch_thumb_selector"
+            android:track="@drawable/lamp_switch_track_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61px"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|right"
+            android:text="屏幕翻转开关:"
+            android:textColor="#4d4d4d"
+            android:padding="10px"
+            android:textSize="10pt"/>
+
+        <Switch
+            android:id="@+id/switch_screenable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTheme"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="12pt"
+            android:thumb="@drawable/lamp_switch_thumb_selector"
+            android:track="@drawable/lamp_switch_track_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61px"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|right"
+            android:text="开机启动开关:"
+            android:textColor="#4d4d4d"
+            android:padding="10px"
+            android:textSize="10pt"/>
+
+        <Switch
+            android:id="@+id/switch_bootable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTheme"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="12pt"
+            android:thumb="@drawable/lamp_switch_thumb_selector"
+            android:track="@drawable/lamp_switch_track_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61px"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|right"
+            android:text="真机检测开关:"
+            android:textColor="#4d4d4d"
+            android:padding="10px"
+            android:textSize="10pt"/>
+
+        <Switch
+            android:id="@+id/switch_deviceable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTheme"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="12pt"
+            android:thumb="@drawable/lamp_switch_thumb_selector"
+            android:track="@drawable/lamp_switch_track_selector" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#55555555"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="819px"
+        android:layout_height="443px"
+        android:padding="100px"
+        android:layout_gravity="center"
+        android:background="@drawable/lamp_login_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_18_ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_title"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="#4C4C4C"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/text_16_666666"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#4C4C4C"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffffff"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|right"
+                    android:textColor="#444444"
+                    android:text="用户名"
+                    android:textSize="8pt"/>
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spiner_selector"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint="选择账户"
+                    android:overlapAnchor="false"
+                    android:singleLine="true"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_mima"
+                    android:layout_width="475px"
+                    android:layout_height="57px"
+                    android:background="@drawable/lamp_login_input"
+                    android:layout_gravity="center"
+                    android:paddingLeft="150px"
+                    android:gravity="center"
+                    android:hint="请输入密码"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:singleLine="true" />
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@id/et_mima"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#444444"
+                    android:text="密码"
+                    android:textSize="8pt"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_logo_message"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="155px"
+                android:layout_height="61px"
+                android:background="@drawable/bt_lamp_button_selector"
+                android:gravity="center"
+                android:textColor="@color/bt_lamp_button_text_color"
+                android:text="确定" />
+
+            <Space
+                android:layout_width="50px"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="155px"
+                android:layout_height="61px"
+                android:background="@drawable/bt_lamp_button_selector"
+                android:gravity="center"
+                android:textColor="@color/bt_lamp_button_text_color"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

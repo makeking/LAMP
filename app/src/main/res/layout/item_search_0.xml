@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1065px"
+    android:layout_height="56px"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/mc100_search_list_item_0">
+    <!--android:background="@drawable/mc100_search_list_item_0"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--android:background="@drawable/item_spot_touch_bg"-->
+    <TextView
+        android:id="@+id/searchitem_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"/>
+
+    <TextView
+        android:id="@+id/searchitem_sampleno"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="26"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/searchitem_checkdatetime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="32"
+        android:gravity="center"/>
+</LinearLayout>

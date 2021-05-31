@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditSpinner">
+        <attr format="reference" name="dropDownDrawable"/>
+        <attr format="dimension" name="dropDownDrawableWidth"/>
+        <attr format="dimension" name="dropDownDrawableHeight"/>
+        <attr format="dimension" name="dropDownDrawableSpacing"/>
+        <attr format="reference" name="dropDownAnimStyle"/>
+        <attr format="integer" name="dropDownAnchor"/>
+        <attr format="dimension" name="dropDownWidth"/>
+        <attr format="dimension" name="dropDownHeight"/>
+        <attr format="reference" name="dropDownSelector"/>
+    </declare-styleable>
+</resources>

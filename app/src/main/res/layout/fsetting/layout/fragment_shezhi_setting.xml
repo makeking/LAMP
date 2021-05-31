@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_ruanjianbanben"
+                android:drawableTop="@drawable/bt_lamp_setting_softversion_selector"
+                android:text="@string/ruanjianbanben"
+                android:visibility="gone"
+                 />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_deviceinfo"
+                android:drawableTop="@drawable/bt_lamp_setting_deviceinfo_selector"
+                android:text="设备信息"
+                 />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_jiaozhunfanwei"
+                android:drawableTop="@drawable/bt_lamp_setting_jiaozhun_selector"
+                android:text="@string/k_jiaozhunfanwei"
+                 />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_liangdu"
+                android:drawableTop="@drawable/bt_lamp_setting_liangdu_selector"
+                android:text="亮度"
+                 />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_wifi"
+                android:drawableTop="@drawable/bt_lamp_setting_wifi_selector"
+                android:text="WIFI"
+                 />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_admin"
+                android:drawableTop="@drawable/bt_lamp_setting_admin_selector"
+                android:text="管理员模式"
+                />
+
+            <Button
+                style="@style/style_lamp_setting_button"
+                android:id="@+id/setting_bt_mainte"
+                android:drawableTop="@drawable/bt_lamp_setting_shebeiguanli_selector"
+                android:text="@string/yunweimoshi"
+                android:visibility="invisible"
+                 />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+
+</LinearLayout>

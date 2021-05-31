@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/style_activity_rl"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_18_ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="我是标题"
+            android:textColor="#4C4C4C"
+            android:visibility="visible" />
+
+        <LinearLayout style="@style/style_title_bt">
+
+            <ImageButton
+                android:id="@+id/negativeButton"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/bg_return_selector" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_bottom_bt_ll">
+
+            <Button
+                android:id="@+id/positiveButton"
+                style="@style/style_ok"
+                android:text="OK" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginTop="134dp"-->
+            <TextView
+                android:id="@+id/message"
+                style="@style/text_16_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.5"
+                android:text="我是一条信息"
+                android:textColor="#4C4C4C"
+                android:textSize="42px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

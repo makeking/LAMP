@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/rg_shiyan_step"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                style="@style/shiyan_step"
+                android:layout_margin="5dp"
+                android:text="项目\n设定" />
+
+            <RadioButton
+                style="@style/shiyan_step"
+                android:layout_margin="5dp"
+                android:text="项目\n运行" />
+
+            <RadioButton
+                style="@style/shiyan_step"
+                android:layout_margin="5dp"
+                android:text="项目\n分析" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<com.bete.fast.customWidget.MyRadioGroup-->
+        <RadioGroup
+            android:id="@+id/rg_shiyan_block"
+            android:layout_width="match_parent"
+            android:layout_height="114px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10px"
+            android:paddingTop="5px">
+
+            <RadioButton
+                android:id="@+id/rb_shiyan_block1"
+                style="@style/main_tab_block"
+                android:layout_marginHorizontal="2dp"
+                android:singleLine="false"
+                android:text="Block A" />
+
+            <RadioButton
+                android:id="@+id/rb_shiyan_block2"
+                style="@style/main_tab_block"
+                android:layout_marginHorizontal="2dp"
+                android:singleLine="false"
+                android:text="Block B" />
+
+            <RadioButton
+                android:id="@+id/rb_shiyan_block3"
+                style="@style/main_tab_block"
+                android:layout_marginHorizontal="2dp"
+                android:singleLine="false"
+                android:text="Block C" />
+
+            <RadioButton
+                android:id="@+id/rb_shiyan_block4"
+                style="@style/main_tab_block"
+                android:layout_marginHorizontal="2dp"
+                android:singleLine="false"
+                android:text="Block D" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/shiyan_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/container_view"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/linearlayout_shap"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <RadioGroup-->
+<!--            android:id="@+id/rg_shiyan_step"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_step1"-->
+<!--                style="@style/shiyan_step"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:text="项目\n设定" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_step2"-->
+<!--                style="@style/shiyan_step"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:text="项目\n运行" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_step3"-->
+<!--                style="@style/shiyan_step"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:text="项目\n分析" />-->
+<!--        </RadioGroup>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/linearlayout_shap"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        &lt;!&ndash;<com.bete.fast.customWidget.MyRadioGroup&ndash;&gt;-->
+<!--        <RadioGroup-->
+<!--            android:id="@+id/rg_shiyan_block"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_block1"-->
+<!--                style="@style/main_tab_block"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:background="@color/green"-->
+<!--                android:singleLine="false"-->
+<!--                android:text="Block A" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_block2"-->
+<!--                style="@style/main_tab_block"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:background="@color/green"-->
+<!--                android:singleLine="false"-->
+<!--                android:text="Block B" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_block3"-->
+<!--                style="@style/main_tab_block"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:singleLine="false"-->
+<!--                android:background="@color/green"-->
+<!--                android:text="Block C" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_shiyan_block4"-->
+<!--                style="@style/main_tab_block"-->
+<!--                android:layout_margin="2dp"-->
+<!--                android:singleLine="false"-->
+<!--                android:background="@color/green"-->
+<!--                android:text="Block D" />-->
+<!--        </RadioGroup>-->
+
+<!--        <FrameLayout-->
+<!--            android:id="@+id/shiyan_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
+
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->

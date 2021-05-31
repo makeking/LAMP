@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_file">创建文件</string>
+    <string name="hint_lbl_new_file">新建文件</string>
+    <string name="btn_lbl_create">新建</string>
+    <string name="btn_lbl_cancel">取消</string>
+</resources>

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        //multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+}
+
+task makeJar(type:Copy) {
+//删除存在的jar
+    delete "build/lib/test.jar"
+//设置拷贝文件
+    from("build/intermediates/bundles/release")
+//打进jar后文件目录
+    into("build/libs/")
+//将classes.jar放入build/libs目录下
+//include,exclude参数来设置过滤
+    include("classes.jar")
+//重命名为test.jar
+    rename("classes.jar","test.jar")
+}
+makeJar.dependsOn(build)

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/mc100_search_list_item_0"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:background="@android:drawable/edit_text">
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1000" />
+
+        <CheckBox
+            android:id="@+id/cb_able"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginLeft="-5dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="text|textPersonName"
+        android:layout_marginLeft="-5dp"
+        android:text="名称" />
+
+    <EditText
+        android:id="@+id/et_addr"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="text|textPersonName"
+        android:layout_marginLeft="-5dp"
+        android:text="地址" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="text|textPersonName"
+        android:layout_marginLeft="-5dp"
+        android:text="内容" />
+
+    <EditText
+        android:id="@+id/et_len"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginLeft="-5dp"
+        android:text="长度"/>
+
+    <Spinner
+        android:id="@+id/spin_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginLeft="-5dp"
+        android:text="数据类型" />
+
+    <EditText
+        android:id="@+id/et_prop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:drawable/edit_text"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:inputType="text|textPersonName"
+        android:layout_marginLeft="-5dp"
+        android:text="属性"
+        android:visibility="gone"/>
+</LinearLayout>

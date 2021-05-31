@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55px"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <CheckBox
+        android:id="@+id/checkboxitem_name"
+        android:layout_width="124px"
+        android:layout_height="51px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:text="1"
+        android:textSize="12pt"
+        android:textColor="@color/rb_lamp_button_text_color"
+        android:background="@drawable/rb_lamp_result_ch_selector"
+        />
+    <!--android:background="@drawable/rb_mc100_report_item_selector"-->
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:padding="10dp">-->
+    <!--<CheckBox-->
+        <!--android:id="@+id/checkboxitem_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:button="@null"-->
+        <!--android:text="1"-->
+        <!--android:background="@drawable/rb_mc100_report_item_selector"-->
+        <!--/>-->
+    <!--&lt;!&ndash;android:background="@drawable/rb_mc100_report_item_selector"&ndash;&gt;-->
+<!--</LinearLayout>-->

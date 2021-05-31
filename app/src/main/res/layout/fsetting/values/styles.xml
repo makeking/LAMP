@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SwitchTheme" parent="@android:style/TextAppearance.Small">
+    <item name="android:textColor">@color/sw_lamp_text_color</item>
+    </style>
+
+    <style name="style_lamp_setting_button">
+        <item name="android:layout_width">242px</item>
+        <item name="android:layout_height">243px</item>
+        <item name="android:paddingTop">60px</item>
+        <item name="android:background">@drawable/bt_lamp_setting_button_background_selector</item>
+        <item name="android:textColor">@color/bt_lamp_setting_button_text_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingBottom">50px</item>
+        <item name="android:textSize">10pt</item>
+    </style>
+
+    <style name="style_frag_bt_eeprom">
+        <item name="android:layout_width">109dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bt_lamp_button_selector</item>
+        <item name="android:textColor">@color/bt_lamp_button_text_color</item>
+        <item name="android:textSize">6pt</item>
+    </style>
+</resources>

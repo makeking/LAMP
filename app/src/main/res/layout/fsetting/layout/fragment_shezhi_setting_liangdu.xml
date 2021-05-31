@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="100px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="亮度："
+                android:textColor="#4d4d4d"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/tv_lightvalue"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="50"
+                android:textColor="#3c4b53"
+                android:textSize="10pt"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lamp_liangdu_small"/>
+            <SeekBar
+                android:id="@+id/sb_liangdu"
+                android:layout_width="367px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100"
+                android:maxHeight="100px"
+                android:min="0"
+                android:minHeight="50px"
+                android:progress="42"
+                android:progressDrawable="@drawable/lamp_liangdu_background"
+                android:thumb="@drawable/lamp_liangdu_thumb" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lamp_liangdu_big"/>
+        </LinearLayout>
+</LinearLayout>

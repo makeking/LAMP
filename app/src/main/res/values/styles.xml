@@ -1,0 +1,190 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+<!--        <item name="android:windowAnimationStyle">@style/fade</item>-->
+    </style>
+
+    <style name="fade" parent="@android:style/Animation.Activity">
+
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+
+        <item name="android:activityOpenExitAnimation">@anim/out_to_left</item>
+
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_right_close</item>
+
+        <item name="android:activityCloseExitAnimation">@anim/out_to_left_close</item>
+
+        <item name="android:taskOpenEnterAnimation">@anim/in_from_right</item>
+
+        <item name="android:taskOpenExitAnimation">@anim/out_to_left</item>
+
+        <item name="android:taskCloseEnterAnimation">@anim/in_from_right_close</item>
+
+        <item name="android:taskCloseExitAnimation">@anim/out_to_left_close</item>
+
+    </style>
+
+    <style name="AppBaseTheme" parent="AppTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+        <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="SplashTheme" parent="AppBaseTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+         <item name="android:windowIsTranslucent">true</item>
+<!--        <item name="android:windowIsTranslucent">false</item>-->
+        <!-- <item name="android:windowDisablePreview">true</item> -->
+    </style>
+
+    <style name="SplashTheme1" parent="AppBaseTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--        <item name="android:windowIsTranslucent">false</item>-->
+        <!-- <item name="android:windowDisablePreview">true</item> -->
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_16_666666">
+    <item name="android:textSize">16.0dip</item>
+    <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="main_tab_top">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:paddingLeft">30dp</item>-->
+        <!--<item name="android:paddingRight">30dp</item>-->
+        <!-- 去按钮立体效果 -->
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="main_bt">
+        <item name="android:textSize">10pt</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- 去按钮立体效果 -->
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="main_tab_block">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/rb_lamp_block_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rb_lamp_block_ready_selector</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- 去按钮立体效果 -->
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="shiyan_step">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <!-- 去按钮立体效果 -->
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="style_ok">
+        <item name="android:layout_width">109dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bt_lamp_button_selector</item>
+        <item name="android:textColor">@color/bt_lamp_button_text_color</item>
+        <item name="android:textSize">9pt</item>
+    </style>
+
+    <style name="style_myedittext">
+        <item name="android:background">@drawable/myedittext</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+    </style>
+
+    <style name="style_title_bt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="style_bottom_bt_ll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="style_activity_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/fast_common_background</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+</resources>

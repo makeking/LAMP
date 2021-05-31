@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    android:background="@drawable/help_background"-->
+
+    <ImageView
+        android:id="@+id/img_help"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="15px"
+        android:layout_weight="521"/>
+<!--    <android.webkit.WebView-->
+<!--        android:id="@+id/webView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="458"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/lamp_help_text_background"-->
+<!--        android:visibility="gone">-->
+<!--    </android.webkit.WebView>-->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="458"
+        android:padding="10dp"
+        android:background="@drawable/lamp_help_text_background">
+        <!--android:background="@drawable/mc100_setting_selfcheck_background"-->
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="2dp"
+            android:layout_margin="15dp" />
+    </ScrollView>
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--&lt;!&ndash;    android:background="@drawable/help_background"&ndash;&gt;-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_help"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:layout_weight="1" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/lamp_help_text_background">-->
+<!--        &lt;!&ndash;android:background="@drawable/mc100_setting_selfcheck_background"&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_help"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:lineSpacingExtra="2dp"-->
+<!--            android:layout_margin="15dp" />-->
+<!--    </ScrollView>-->
+
+<!--    &lt;!&ndash;<TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;android:id="@+id/tv_help"&ndash;&gt;-->
+<!--        &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--        &lt;!&ndash;android:layout_margin="15dp"/>&ndash;&gt;-->
+<!--</LinearLayout>-->

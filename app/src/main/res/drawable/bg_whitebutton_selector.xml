@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/whitebuttonitem1" />
+    <item android:state_pressed="false" android:drawable="@drawable/whitebuttonitem0" />
+    <item android:state_pressed="true" android:drawable="@drawable/whitebuttonitem1" />
+    <!--<item><shape>-->
+    <!--<solid android:drawable="@drawable/power0" />-->
+    <!--</shape></item>-->
+    <!--transparent_red White #303030  #1e1d1d #efeff4  actions_item_bg_s-->
+
+</selector>

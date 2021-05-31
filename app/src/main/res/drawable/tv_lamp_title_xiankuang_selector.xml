@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/lamp_title_xiankuang">
+        <shape android:shape="rectangle">
+        <gradient android:angle="270.0" android:endColor="#ffffffff" android:startColor="#ffffffff">
+            <stroke android:color="#2D9FF7" android:width="1dp">
+            </stroke>
+        </gradient>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:drawable="@drawable/lamp_title_xiankuang_disable">
+        <shape android:shape="rectangle">
+        <gradient android:angle="270.0" android:endColor="#ffffffff" android:startColor="#ffffffff">
+            <stroke android:color="#ffffffff" android:width="1dp">
+            </stroke>
+        </gradient>
+        </shape>
+    </item>
+</selector>

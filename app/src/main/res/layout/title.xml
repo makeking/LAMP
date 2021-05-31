@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60px"
+    android:background="@drawable/gothrought">
+    <TextView
+        android:id="@+id/title_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:lines="2"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="8pt"/>
+</LinearLayout>
